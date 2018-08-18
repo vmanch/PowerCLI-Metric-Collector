@@ -1,0 +1,246 @@
+<VMDataCollector>
+	<PerfConfigs>
+	 <VM>
+		<ObjectType>Get-VM</ObjectType>
+		<Interval>1800</Interval>
+		<Config>
+			<MetricName>cpu.usage.average</MetricName>
+			<MetricLabel>CPU usage %</MetricLabel>
+		</Config>
+		<Config>
+			<MetricName>mem.usage.average</MetricName>
+			<MetricLabel>Memory usage %</MetricLabel>
+		</Config>
+		<Config>
+			<MetricName>net.usage.average</MetricName>
+			<MetricLabel>Network usage KBps</MetricLabel>
+		</Config>		
+		<Config>
+			<MetricName>disk.usage.average</MetricName>
+			<MetricLabel>Disk usage KBps</MetricLabel>
+		</Config>	
+		<Config>
+			<MetricName>cpu.costop.summation</MetricName>
+			<MetricLabel>CoStop (ms)</MetricLabel>
+		</Config>	
+		<Config>
+			<MetricName>cpu.ready.summation</MetricName>
+			<MetricLabel>CPUReady (ms)</MetricLabel>
+		</Config>	
+		<Config>
+			<MetricName>disk.maxTotalLatency.latest</MetricName>
+			<MetricLabel>Max Latency All Disks (ms)</MetricLabel> 
+		</Config>	
+		<Config>
+			<MetricName>disk.numberReadAveraged.average</MetricName>
+			<MetricLabel>Disk Read IOPS</MetricLabel>
+		</Config>	
+		<Config>
+			<MetricName>disk.numberWriteAveraged.average</MetricName>
+			<MetricLabel>Disk Write IOPS</MetricLabel>
+		</Config>			
+      </VM>
+	 <VM-RT>
+		<Config>
+			<MetricName>cpu.usage.average</MetricName>
+			<MetricLabel>CPU usage %</MetricLabel>
+		</Config>
+		<Config>
+			<MetricName>mem.usage.average</MetricName>
+			<MetricLabel>Memory usage %</MetricLabel>
+		</Config>
+		<Config>
+			<MetricName>net.usage.average</MetricName>
+			<MetricLabel>Network usage KBps</MetricLabel>
+		</Config>		
+		<Config>
+			<MetricName>disk.usage.average</MetricName>
+			<MetricLabel>Disk usage KBps</MetricLabel>
+		</Config>	
+		<Config>
+			<MetricName>cpu.costop.summation</MetricName>
+			<MetricLabel>CoStop (ms)</MetricLabel>
+		</Config>	
+		<Config>
+			<MetricName>cpu.ready.summation</MetricName>
+			<MetricLabel>CPUReady (ms)</MetricLabel>
+		</Config>	
+		<Config>
+			<MetricName>disk.maxTotalLatency.latest</MetricName>
+			<MetricLabel>Max Latency All Disks (ms)</MetricLabel> 
+		</Config>	
+		<Config>
+			<MetricName>disk.numberReadAveraged.average</MetricName>
+			<MetricLabel>Disk Read IOPS</MetricLabel>
+		</Config>	
+		<Config>
+			<MetricName>disk.numberWriteAveraged.average</MetricName>
+			<MetricLabel>Disk Write IOPS</MetricLabel>
+		</Config>			
+      </VM-RT>
+	  <VM-OM>
+		<ObjectType>VirtualMachine</ObjectType>
+		<Interval>DAYS</Interval>
+		<Rollup>AVG</Rollup>
+		<IntervalCount>1</IntervalCount>
+		<Config>
+			<MetricName>mem|usage_average</MetricName>
+		</Config>		
+		<Config>
+			<MetricName>mem|balloonPct</MetricName>
+		</Config>
+		<Config>
+			<MetricName>mem|swapped_average</MetricName>
+		</Config>
+		<Config>
+			<MetricName>mem|actual.capacity</MetricName>
+		</Config>
+		<Config>
+			<MetricName>cpu|usage_average</MetricName>
+		</Config>	
+		<Config>
+			<MetricName>cpu|readyPct</MetricName>
+		</Config>	
+		<Config>
+			<MetricName>cpu|costopPct</MetricName>
+		</Config>			
+		<Config>
+			<MetricName>cpu|actual.capacity</MetricName>
+		</Config>
+		<Config>
+			<MetricName>virtualDisk:Aggregate of all instances|numberReadAveraged_average</MetricName>
+		</Config>	
+		<Config>
+			<MetricName>virtualDisk:Aggregate of all instances|numberWriteAveraged_average</MetricName>
+		</Config>
+		<Config>
+			<MetricName>virtualDisk:Aggregate of all instances|totalReadLatency_average</MetricName>
+		</Config>	
+		<Config>
+			<MetricName>virtualDisk:Aggregate of all instances|totalWriteLatency_average</MetricName>
+		</Config>
+		<Config>
+			<MetricName>virtualDisk:Aggregate of all instances|usage</MetricName>
+		</Config>
+		<Config>
+			<MetricName>net:Aggregate of all instances|droppedPct</MetricName>
+		</Config>		
+		<Config>
+			<MetricName>net:Aggregate of all instances|packetsRxPerSec</MetricName>
+		</Config>		
+		<Config>
+			<MetricName>net:Aggregate of all instances|packetsTxPerSec</MetricName>
+		</Config>
+		</VM-OM>
+	  <HOST>
+		<ObjectType>Get-VMHost</ObjectType>
+		<Interval>300</Interval>
+		<Config>
+			<MetricName>cpu.usage.average</MetricName>
+			<MetricLabel>CPU usage %</MetricLabel>
+		</Config>
+		<Config>
+			<MetricName>mem.usage.average</MetricName>
+			<MetricLabel>Memory usage %</MetricLabel>
+		</Config>
+		<Config>
+			<MetricName>net.usage.average</MetricName>
+			<MetricLabel>Network usage KBps</MetricLabel>
+		</Config>		
+		<Config>
+			<MetricName>disk.usage.average</MetricName>
+			<MetricLabel>Disk usage KBps</MetricLabel>
+		</Config>	
+		<Config>
+			<MetricName>cpu.costop.summation</MetricName>
+			<MetricLabel>CoStop (ms)</MetricLabel>
+		</Config>	
+		<Config>
+			<MetricName>cpu.ready.summation</MetricName>
+			<MetricLabel>CPUReady (ms)</MetricLabel>
+		</Config>	
+		<Config>
+			<MetricName>disk.maxTotalLatency.latest</MetricName>
+			<MetricLabel>Max Latency All Disks (ms)</MetricLabel> 
+		</Config>	
+		<Config>
+			<MetricName>disk.numberReadAveraged.average</MetricName>
+			<MetricLabel>Disk Read IOPS</MetricLabel>
+		</Config>	
+		<Config>
+			<MetricName>disk.numberWriteAveraged.average</MetricName>
+			<MetricLabel>Disk Write IOPS</MetricLabel>
+		</Config>
+		<Config>
+			<MetricName>mem.heap.average</MetricName>
+			<MetricLabel>Host Memory Heap KB</MetricLabel>
+		</Config>	
+		<Config>
+			<MetricName>mem.heapfree.average</MetricName>
+			<MetricLabel>Host Memory Heap Free KB</MetricLabel>
+		</Config>
+	  </HOST>
+	  <HOST-RT>
+		<Config>
+			<MetricName>mem.heap.average</MetricName>
+			<MetricLabel>Host Memory Heap KB</MetricLabel>
+		</Config>	
+		<Config>
+			<MetricName>mem.heapfree.average</MetricName>
+			<MetricLabel>Host Memory Heap Free KB</MetricLabel>
+		</Config>
+	 </HOST-RT>
+	 <DATASTORE>
+		<ObjectType>Get-Datastore</ObjectType>
+		<Interval>RT</Interval>
+		<Config>
+			<MetricName>disk.capacity.latest</MetricName>
+			<MetricLabel>Datastore configured size KB</MetricLabel>
+		</Config>
+		<Config>
+			<MetricName>disk.provisioned.latest</MetricName>
+			<MetricLabel>Datastore provisioned size KB</MetricLabel>
+		</Config>
+		<Config>
+			<MetricName>disk.used.latest</MetricName>
+			<MetricLabel>Datastore Capacity Used KB</MetricLabel>
+		</Config>		
+		<Config>
+			<MetricName>disk.numberReadAveraged.average</MetricName>
+			<MetricLabel>Disk Read IOPS</MetricLabel>
+		</Config>	
+		<Config>
+			<MetricName>disk.numberWriteAveraged.average</MetricName>
+			<MetricLabel>Disk Write IOPS</MetricLabel>
+		</Config>
+	  </DATASTORE>
+	 <CLUSTER>
+		<ObjectType>Get-Cluster</ObjectType>
+		<Interval>300</Interval>
+		<Config>
+			<MetricName>cpu.usage.average</MetricName>
+			<MetricLabel>CPU usage %</MetricLabel>
+		</Config>
+		<Config>
+			<MetricName>mem.usage.average</MetricName>
+			<MetricLabel>Memory usage %</MetricLabel>
+		</Config>
+	 </CLUSTER>
+	</PerfConfigs>
+	<Jobs>
+		<MaxJobCount>3</MaxJobCount>
+		<SleepTimerSec>3</SleepTimerSec>
+		<ElementList>D:\Powershell\PCLICollector\</ElementList>
+	</Jobs>
+
+	<UploadSettings>
+		<LocalSettings>
+			<RTFileFolder>D:\Powershell\PCLICollector\Data\RTFileFolder\</RTFileFolder>
+			<RawFileFolder>D:\Powershell\PCLICollector\Data\RawFileFolder\</RawFileFolder>
+			<INVFileFolder>D:\Powershell\PCLICollector\Data\INVFileFolder\</INVFileFolder>
+			<RELFileFolder>D:\Powershell\PCLICollector\Data\RELFileFolder\</RELFileFolder>
+			<ArchiveFolder>D:\Powershell\PCLICollector\Data\ArchiveFolder\</ArchiveFolder>		
+			<LogFolder>D:\Powershell\PCLICollector\Data\LogFolder\</LogFolder>	
+		</LocalSettings>
+	</UploadSettings>
+</VMDataCollector>
